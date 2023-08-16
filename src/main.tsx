@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.css'
 import App from './App';
 import QuincyNFTPage from './components/QuincyNFTPage';
-
+import BananaFarm from './components/BananaFarmPage';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import BananaFarm from './components/BananaFarmPage';
+import DisplayResults from './components/DisplayResultsPage';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,12 +17,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: "quincynft",
-        element: <QuincyNFTPage />
+        element: <QuincyNFTPage />,
       },
       {
         path: "bananafarm",
-        element: <BananaFarm />
+        element: <BananaFarm />,
       },
+      {
+        path: "displayresults",
+        element: <DisplayResults/>,
+      }
     ]
   },
 ]);

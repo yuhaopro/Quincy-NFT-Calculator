@@ -1,0 +1,41 @@
+
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox */
+
+/* quincynft */
+
+.content-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.form-group {
+    padding: 20px;
+    /* 
+        stating the width fixes the width to the width of the parent,
+        so the form-control width will be fixed as well 
+        and not scale based on the length of text in form-label
+     */
+    width: 100%;
+
+}
+.form-label {
+    font-size: x-large;
+    font-weight: bold;
+}
+.form-control {
+    width: 100%;
+}
